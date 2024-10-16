@@ -10,14 +10,20 @@ const navContent = `
 
 function createNavMenu(document) {
       // Your code goes here
-      const nav = document.createElement("nav");
-      nav.classList.add("main-navigation");
+      // create nav element
+      const mainNav = document.createElement(" mainNav ");
+       mainNav .classList.add("main-navigation");
 
-      const ul = document.createElement("ul");
-      ul.innerHTML = navContent;
+      // create unordered list
+      const navList = document.createElement("navList");
 
-      nav.append(ul);
-      
+      // place the list items into the unordered list ('navList')
+      navList.innerHTML = navContent;
+
+      // place the nav list inside the mainNav
+       mainNav .append(navList);
+
+      // place the maniNav inside the header
       const siteHeader = document.querySelector(".siteheader")
       siteHeader.append(nav);
 }
