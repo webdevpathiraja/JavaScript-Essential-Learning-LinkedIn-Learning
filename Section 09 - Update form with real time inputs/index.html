@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Information Update</title>
+</head>
+<body>
+    <div id="info">
+        <p class="info-item" id="name">
+            Name: <span class="value">-</span>
+        </p>
+        <form id="update-name">
+            <label for="name-input">Update Name:</label>
+            <input type="text" id="name-input">
+            <button type="submit" data-target="name">Update</button>
+        </form>
+
+        <p class="info-item" id="description">
+            Description: <span class="value">-</span>
+        </p>
+        <form id="update-description">
+            <label for="description-input">Update Description:</label>
+            <input type="text" id="description-input">
+            <button type="submit" data-target="description">Update</button>
+        </form>
+
+        <p class="info-item" id="color">
+            Color: <span class="value">-</span>
+        </p>
+        <form id="update-color">
+            <label for="color-input">Update Color:</label>
+            <input type="text" id="color-input">
+            <button type="submit" data-target="color">Update</button>
+        </form>
+
+        <p class="info-item" id="volume">
+            Volume: <span class="value">-</span>
+        </p>
+        <form id="update-volume">
+            <label for="volume-input">Update Volume:</label>
+            <input type="text" id="volume-input">
+            <button type="submit" data-target="volume">Update</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
